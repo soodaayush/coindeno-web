@@ -1,0 +1,11 @@
+{
+  "BASE_URL": "https://portfolio-9bea1-default-rtdb.firebaseio.com",
+  "DEFAULT_CURRENCY": "CAD",
+  "SUPPORTED_CURRENCIES": [
+    { "key": "cad", "name": "CAD" },
+    { "key": "eur", "name": "EUR" },
+    { "key": "gbp", "name": "GBP" },
+    { "key": "inr", "name": "INR" },
+    { "key": "usd", "name": "USD" }
+  ]
+}
