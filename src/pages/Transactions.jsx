@@ -1,17 +1,20 @@
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-import Add from '../components/common/Add';
-import TransactionList from '../components/layout/transactions/TransactionList';
+import Add from "../components/common/Add";
+import TransactionList from "../components/layout/transactions/TransactionList";
 
 const Transactions = (props) => {
   const history = useNavigate();
 
-  if (!localStorage.getItem('user_token')) {
-    history('/login');
-  }
+  useEffect(() => {
+    if (!localStorage.getItem("user_token")) {
+      history("/login");
+    }
+  }, []);
 
   function AddTransaction() {
-    history('/addTransaction');
+    history("/addTransaction");
   }
 
   return (

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 import Add from "../components/common/Add";
 import WalletList from "../components/layout/wallet/WalletList";
@@ -6,9 +7,11 @@ import WalletList from "../components/layout/wallet/WalletList";
 const Wallets = () => {
   const history = useNavigate();
 
-  if (!localStorage.getItem("user_token")) {
-    history("/login");
-  }
+  useEffect(() => {
+    if (!localStorage.getItem("user_token")) {
+      history("/login");
+    }
+  }, []);
 
   function redirectToAddWalletPage() {
     history("/addWallet");

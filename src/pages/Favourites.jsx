@@ -13,9 +13,11 @@ import Refresh from "../components/common/Refresh";
 const Favourites = () => {
   const history = useNavigate();
 
-  if (!localStorage.getItem("user_token")) {
-    history("/login");
-  }
+  useEffect(() => {
+    if (!localStorage.getItem("user_token")) {
+      history("/login");
+    }
+  }, []);
 
   const selectedCurrency = useSelector(
     (currencyState) => currencyState.currency

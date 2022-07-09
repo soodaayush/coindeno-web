@@ -11,9 +11,11 @@ import Button from "../components/common/Button";
 const AddTransaction = (props) => {
   const history = useNavigate();
 
-  if (!localStorage.getItem("user_token")) {
-    history("/login");
-  }
+  useEffect(() => {
+    if (!localStorage.getItem("user_token")) {
+      history("/login");
+    }
+  }, []);
 
   const location = useLocation();
 
