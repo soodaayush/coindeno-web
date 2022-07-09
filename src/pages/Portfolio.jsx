@@ -1,19 +1,21 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-import Refresh from '../components/common/Refresh';
-import PortfolioList from '../components/layout/portfolio/PortfolioList';
-import TransactionService from '../api/services/Transaction';
+import Refresh from "../components/common/Refresh";
+import PortfolioList from "../components/layout/portfolio/PortfolioList";
+import TransactionService from "../api/services/Transaction";
 
 const Portfolio = () => {
   const history = useNavigate();
   const [loadedTransactions, setLoadedTransactions] = useState([]);
   const [refresh, setRefresh] = useState(false);
 
-  if (!localStorage.getItem('user_token')) {
-    history('/login');
-  }
+  useEffect(() => {
+    if (!localStorage.getItem("user_token")) {
+      history("/login");
+    }
+  }, []);
 
   const selectedCurrency = useSelector(
     (currencyState) => currencyState.currency
@@ -34,10 +36,10 @@ const Portfolio = () => {
             id: key,
             coinAmount: parseFloat(data[key].coinAmount),
             fiatAmount:
-              data[key].fiatAmount !== ''
+              data[key].fiatAmount !== ""
                 ? parseFloat(data[key].fiatAmount)
-                : '',
-            fee: data[key].fee !== '' ? parseFloat(data[key].fee) : '',
+                : "",
+            fee: data[key].fee !== "" ? parseFloat(data[key].fee) : "",
             coinName: data[key].cryptoCurrency,
             currency: data[key].currency,
             exchange: data[key].exchange,
@@ -69,7 +71,7 @@ const Portfolio = () => {
           currency={selectedCurrency}
         />
       ) : (
-        ''
+        ""
       )}
     </div>
   );
