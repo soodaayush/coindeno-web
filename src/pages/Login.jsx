@@ -1,6 +1,4 @@
 import google from "../images/google.svg";
-import facebook from "../images/facebook.svg";
-import twitter from "../images/twitter.svg";
 
 import Input from "../components/common/Input";
 import Button from "../components/common/Button";
@@ -14,8 +12,6 @@ import { auth } from "../firebase/firebase";
 import {
   signInWithPopup,
   GoogleAuthProvider,
-  FacebookAuthProvider,
-  TwitterAuthProvider,
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -42,48 +38,6 @@ const Login = () => {
     });
 
     signInWithPopup(auth, google_provider)
-      .then((result) => {
-        const user = result.user;
-        const token = user.uid;
-
-        localStorage.setItem("user_token", GetHash(token));
-        localStorage.setItem("user_name", user.email);
-
-        history("/");
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
-
-  const signInWithFacebook = () => {
-    const facebook_provider = new FacebookAuthProvider();
-    facebook_provider.setCustomParameters({
-      prompt: "select_account",
-    });
-
-    signInWithPopup(auth, facebook_provider)
-      .then((result) => {
-        const user = result.user;
-        const token = user.uid;
-
-        localStorage.setItem("user_token", GetHash(token));
-        localStorage.setItem("user_name", user.email);
-
-        history("/");
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
-
-  const signInWithTwitter = () => {
-    const twitter_provider = new TwitterAuthProvider();
-    twitter_provider.setCustomParameters({
-      prompt: "select_account",
-    });
-
-    signInWithPopup(auth, twitter_provider)
       .then((result) => {
         const user = result.user;
         const token = user.uid;
@@ -160,20 +114,6 @@ const Login = () => {
         >
           <img className="mr-2 h-7" src={google} alt="google" />
           Sign in with Google
-        </button>
-        <button
-          className="outline-none m-2 dark:bg-white border-blue-500 border-2 bg-gray-300 rounded p-2 text-blue-500 w-72 flex justify-center items-center"
-          onClick={signInWithFacebook}
-        >
-          <img className="mr-2 h-7" src={facebook} alt="facebook" />
-          Sign in with Facebook
-        </button>
-        <button
-          className="outline-none m-2 dark:bg-white border-blue-500 border-2 bg-gray-300 rounded p-2 text-blue-500 w-72 flex justify-center items-center"
-          onClick={signInWithTwitter}
-        >
-          <img className="mr-2 h-7" src={twitter} alt="twitter" />
-          Sign in with Twitter
         </button>
         <div className="flex justify-center items-center mt-4">
           <hr className="w-32 mr-3 border-black" />
