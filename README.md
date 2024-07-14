@@ -2,7 +2,6 @@
 
 ![coindeno-web](https://github.com/user-attachments/assets/895d7b98-f7ce-44e9-bb00-cb09d6a13a23)
 
-
 ## Inspiration
 
 What inspired me to make this app was CoinGecko's website. This was the website that allowed me to learn React. I realized that making a website like CoinGecko will teach me a lot about using React, so I thought it was the perfect idea.
@@ -10,6 +9,10 @@ What inspired me to make this app was CoinGecko's website. This was the website 
 ## Challenges
 
 The challenges faced when creating this app where fetching data from CoinGecko's API and setting up the database behind the accounts and ensuring it is secure.
+
+## Lessons Learned
+
+Since React was my first web framework, I learned a tremendous amount of things about React, especially Redux. I learned about creating a database and how the website can interact with it.
 
 ## The Website
 
