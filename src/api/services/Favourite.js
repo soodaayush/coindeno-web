@@ -1,7 +1,5 @@
-import { Component } from 'react';
-//import { GetHash } from './../../utils/Common';
-
-import configData from '../../config.json';
+import { Component } from "react";
+import configData from "../../config.json";
 
 export class FavouriteService extends Component {
   static myInstance = null;
@@ -12,8 +10,7 @@ export class FavouriteService extends Component {
 
   async getFavourites() {
     try {
-      let user = localStorage.getItem('user_token');
-      //user = GetHash(user);
+      let user = localStorage.getItem("user_token");
 
       let url = `${configData.BASE_URL}/${user}/favourites.json`;
 
@@ -28,16 +25,15 @@ export class FavouriteService extends Component {
   }
 
   async createFavourite(transactionData) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/favourites.json`;
 
     let response = await fetch(url, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify(transactionData),
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
 
@@ -45,13 +41,12 @@ export class FavouriteService extends Component {
   }
 
   async deleteFavourite(id) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/favourites/${id}.json`;
 
     return await fetch(url, {
-      method: 'DELETE',
+      method: "DELETE",
     });
   }
 }

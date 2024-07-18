@@ -1,7 +1,5 @@
-import { Component } from 'react';
-//import { GetHash } from './../../utils/Common';
-
-import configData from '../../config.json';
+import { Component } from "react";
+import configData from "../../config.json";
 
 export class WalletService extends Component {
   static myInstance = null;
@@ -12,8 +10,7 @@ export class WalletService extends Component {
 
   async getWallets() {
     try {
-      let user = localStorage.getItem('user_token');
-      //user = GetHash(user);
+      let user = localStorage.getItem("user_token");
 
       let url = `${configData.BASE_URL}/${user}/wallets.json`;
       let response = await fetch(url);
@@ -27,39 +24,36 @@ export class WalletService extends Component {
   }
 
   async createWallet(transactionData) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/wallets.json`;
 
     return await fetch(url, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify(transactionData),
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
   }
 
   async deleteWallet(id) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/wallets/${id}.json`;
 
     return await fetch(url, {
-      method: 'DELETE',
+      method: "DELETE",
     });
   }
 
   async editWallet(transaction, id) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/wallets/${id}.json`;
 
     return await fetch(url, {
-      method: 'PUT',
+      method: "PUT",
       body: JSON.stringify(transaction),
     });
   }

@@ -1,7 +1,5 @@
-import { Component } from 'react';
-//import { GetHash } from './../../utils/Common';
-
-import configData from '../../config.json';
+import { Component } from "react";
+import configData from "../../config.json";
 
 export class FiatService extends Component {
   static myInstance = null;
@@ -12,8 +10,7 @@ export class FiatService extends Component {
 
   async getFiats() {
     try {
-      let user = localStorage.getItem('user_token');
-      //user = GetHash(user);
+      let user = localStorage.getItem("user_token");
 
       let url = `${configData.BASE_URL}/${user}/fiats.json`;
 
@@ -28,39 +25,37 @@ export class FiatService extends Component {
   }
 
   async createFiat(transactionData) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/fiats.json`;
 
     return await fetch(url, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify(transactionData),
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
   }
 
   async deleteFiat(id) {
-    let user = localStorage.getItem('user_token');
-    //user = GetHash(user);
+    let user = localStorage.getItem("user_token");
 
     let url = `${configData.BASE_URL}/${user}/fiats/${id}.json`;
 
     return await fetch(url, {
-      method: 'DELETE',
+      method: "DELETE",
     });
   }
 
   async editFiat(transaction, id) {
-    let user = localStorage.getItem('user_token');
-    user = user.replace(/[^a-zA-Z0-9]/g, '');
+    let user = localStorage.getItem("user_token");
+    user = user.replace(/[^a-zA-Z0-9]/g, "");
 
     let url = `${configData.BASE_URL}/${user}/fiats/${id}.json`;
 
     return await fetch(url, {
-      method: 'PUT',
+      method: "PUT",
       body: JSON.stringify(transaction),
     });
   }
@@ -68,24 +63,24 @@ export class FiatService extends Component {
   getCanadianBanksList() {
     let exchanges = [
       {
-        id: 'ScotiaBank',
-        name: 'ScotiaBank',
+        id: "ScotiaBank",
+        name: "ScotiaBank",
       },
       {
-        id: 'CIBC',
-        name: 'CIBC',
+        id: "CIBC",
+        name: "CIBC",
       },
       {
-        id: 'BMO',
-        name: 'BMO',
+        id: "BMO",
+        name: "BMO",
       },
       {
-        id: 'RBC',
-        name: 'RBC',
+        id: "RBC",
+        name: "RBC",
       },
       {
-        id: 'TD',
-        name: 'TD',
+        id: "TD",
+        name: "TD",
       },
     ];
     return exchanges;

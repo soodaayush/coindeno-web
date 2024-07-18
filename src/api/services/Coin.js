@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component } from "react";
 export class CoinService extends Component {
   static myInstance = null;
 
@@ -85,16 +85,16 @@ export class CoinService extends Component {
   getCanadianExchangesList() {
     let exchanges = [
       {
-        id: 'Newton',
-        name: 'Newton',
+        id: "Newton",
+        name: "Newton",
       },
       {
-        id: 'NDAX',
-        name: 'NDAX',
+        id: "NDAX",
+        name: "NDAX",
       },
       {
-        id: 'Shakepay',
-        name: 'Shakepay',
+        id: "Shakepay",
+        name: "Shakepay",
       },
     ];
 
