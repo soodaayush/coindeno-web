@@ -4,7 +4,7 @@
 
 ## Inspiration
 
-What inspired me to make this app was CoinGecko's website. This website allowed me to learn React. I realized that making a website like CoinGecko would teach me a lot about using React, so I thought it was the perfect idea.
+What inspired me to make this app was CoinGecko's website, which contained a database on most cryptocurrencies. This website was my first interaction with React, which allowed me to expand my technical skills.
 
 ## Challenges
 
@@ -12,7 +12,7 @@ The challenges faced when creating this app included fetching data from CoinGeck
 
 ## Lessons Learned
 
-Since React was my first web framework, I learned a tremendous amount about React, especially Redux. I learned about creating a database and how the website can interact with it.
+Since React was my first web framework, I learned a tremendous amount about React, especially concerning Redux. I learned about creating a database and how the website can interact with it.
 
 ## The Website
 
