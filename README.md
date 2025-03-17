@@ -1,6 +1,6 @@
 # CoinDeno Web
 
-![coindeno-web](https://github.com/user-attachments/assets/895d7b98-f7ce-44e9-bb00-cb09d6a13a23)
+![coindeno-web](https://github.com/user-attachments/assets/9e5f70cc-d0b3-4636-b97a-81012b2d08fb)
 
 ## Inspiration
 
