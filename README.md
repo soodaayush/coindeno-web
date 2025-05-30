@@ -4,19 +4,32 @@
 
 ## Inspiration
 
-What inspired me to make this app was CoinGecko's website, which contained a database on most cryptocurrencies. This website was my first interaction with React, which allowed me to expand my technical skills.
+The idea sparked from my experience exploring [CoinGecko](https://www.coingecko.com/), a site packed with cryptocurrency data. I wanted to build something of my own, something functional and exciting. So I dove headfirst into React. CoinDeno Web is not only my first React project, but also a deep dive into the world of real-time APIs and full-stack development.
 
 ## Challenges
 
-The challenges faced when creating this app included fetching data from CoinGecko's API, setting up the database behind the accounts, and ensuring it is secure.
+- Integrating with the CoinGecko API to fetch live cryptocurrency data
+- Setting up and securing user authentication and data storage
+- Managing application-wide state with Redux without losing my mind 😅
 
 ## Lessons Learned
 
-Since React was my first web framework, I learned a tremendous amount about React, especially concerning Redux. I learned about creating a database and how the website can interact with it.
+This project was a crash course in modern web development:
+
+- React + Redux: My first taste of building reactive interfaces with real-time state management.
+- Backend & Databases: Learned how to structure user accounts and store transaction data securely.
+- Authentication & Security: Built secure login and portfolio storage features.
 
 ## The Website
 
-CoinDeno Web is a website that tracks cryptocurrencies. You can open an account on this website and build your own portfolio, add your favorite cryptocurrencies, log all the transactions you have made, and log your wallets. This website was built using Vite for React.
+CoinDeno Web is a crypto tracking platform where users can:
+
+- Create an account and manage their own crypto portfolio
+- Track coins they care about in real time
+- Log wallet addresses and transaction history
+- Keep everything organized in one intuitive dashboard
+
+Built with 💙 using React + Vite for fast and modern web development.
 
 ## Links
 
