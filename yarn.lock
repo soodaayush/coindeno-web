@@ -30,26 +30,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.28.4":
-  version: 7.28.4
-  resolution: "@babel/core@npm:7.28.4"
+"@babel/core@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/core@npm:7.28.5"
   dependencies:
     "@babel/code-frame": "npm:^7.27.1"
-    "@babel/generator": "npm:^7.28.3"
+    "@babel/generator": "npm:^7.28.5"
     "@babel/helper-compilation-targets": "npm:^7.27.2"
     "@babel/helper-module-transforms": "npm:^7.28.3"
     "@babel/helpers": "npm:^7.28.4"
-    "@babel/parser": "npm:^7.28.4"
+    "@babel/parser": "npm:^7.28.5"
     "@babel/template": "npm:^7.27.2"
-    "@babel/traverse": "npm:^7.28.4"
-    "@babel/types": "npm:^7.28.4"
+    "@babel/traverse": "npm:^7.28.5"
+    "@babel/types": "npm:^7.28.5"
     "@jridgewell/remapping": "npm:^2.3.5"
     convert-source-map: "npm:^2.0.0"
     debug: "npm:^4.1.0"
     gensync: "npm:^1.0.0-beta.2"
     json5: "npm:^2.2.3"
     semver: "npm:^6.3.1"
-  checksum: 10c0/ef5a6c3c6bf40d3589b5593f8118cfe2602ce737412629fb6e26d595be2fcbaae0807b43027a5c42ec4fba5b895ff65891f2503b5918c8a3ea3542ab44d4c278
+  checksum: 10c0/535f82238027621da6bdffbdbe896ebad3558b311d6f8abc680637a9859b96edbf929ab010757055381570b29cf66c4a295b5618318d27a4273c0e2033925e72
   languageName: node
   linkType: hard
 
@@ -76,6 +76,19 @@ __metadata:
     "@jridgewell/trace-mapping": "npm:^0.3.28"
     jsesc: "npm:^3.0.2"
   checksum: 10c0/0ff58bcf04f8803dcc29479b547b43b9b0b828ec1ee0668e92d79f9e90f388c28589056637c5ff2fd7bcf8d153c990d29c448d449d852bf9d1bc64753ca462bc
+  languageName: node
+  linkType: hard
+
+"@babel/generator@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/generator@npm:7.28.5"
+  dependencies:
+    "@babel/parser": "npm:^7.28.5"
+    "@babel/types": "npm:^7.28.5"
+    "@jridgewell/gen-mapping": "npm:^0.3.12"
+    "@jridgewell/trace-mapping": "npm:^0.3.28"
+    jsesc: "npm:^3.0.2"
+  checksum: 10c0/9f219fe1d5431b6919f1a5c60db8d5d34fe546c0d8f5a8511b32f847569234ffc8032beb9e7404649a143f54e15224ecb53a3d11b6bb85c3203e573d91fca752
   languageName: node
   linkType: hard
 
@@ -157,6 +170,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-validator-identifier@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/helper-validator-identifier@npm:7.28.5"
+  checksum: 10c0/42aaebed91f739a41f3d80b72752d1f95fd7c72394e8e4bd7cdd88817e0774d80a432451bcba17c2c642c257c483bf1d409dd4548883429ea9493a3bc4ab0847
+  languageName: node
+  linkType: hard
+
 "@babel/helper-validator-option@npm:^7.27.1":
   version: 7.27.1
   resolution: "@babel/helper-validator-option@npm:7.27.1"
@@ -202,6 +222,17 @@ __metadata:
   bin:
     parser: ./bin/babel-parser.js
   checksum: 10c0/58b239a5b1477ac7ed7e29d86d675cc81075ca055424eba6485872626db2dc556ce63c45043e5a679cd925e999471dba8a3ed4864e7ab1dbf64306ab72c52707
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/parser@npm:7.28.5"
+  dependencies:
+    "@babel/types": "npm:^7.28.5"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 10c0/5bbe48bf2c79594ac02b490a41ffde7ef5aa22a9a88ad6bcc78432a6ba8a9d638d531d868bd1f104633f1f6bba9905746e15185b8276a3756c42b765d131b1ef
   languageName: node
   linkType: hard
 
@@ -253,7 +284,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.28.3, @babel/traverse@npm:^7.28.4":
+"@babel/traverse@npm:^7.28.3":
   version: 7.28.4
   resolution: "@babel/traverse@npm:7.28.4"
   dependencies:
@@ -265,6 +296,21 @@ __metadata:
     "@babel/types": "npm:^7.28.4"
     debug: "npm:^4.3.1"
   checksum: 10c0/ee678fdd49c9f54a32e07e8455242390d43ce44887cea6567b233fe13907b89240c377e7633478a32c6cf1be0e17c2f7f3b0c59f0666e39c5074cc47b968489c
+  languageName: node
+  linkType: hard
+
+"@babel/traverse@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/traverse@npm:7.28.5"
+  dependencies:
+    "@babel/code-frame": "npm:^7.27.1"
+    "@babel/generator": "npm:^7.28.5"
+    "@babel/helper-globals": "npm:^7.28.0"
+    "@babel/parser": "npm:^7.28.5"
+    "@babel/template": "npm:^7.27.2"
+    "@babel/types": "npm:^7.28.5"
+    debug: "npm:^4.3.1"
+  checksum: 10c0/f6c4a595993ae2b73f2d4cd9c062f2e232174d293edd4abe1d715bd6281da8d99e47c65857e8d0917d9384c65972f4acdebc6749a7c40a8fcc38b3c7fb3e706f
   languageName: node
   linkType: hard
 
@@ -296,6 +342,16 @@ __metadata:
     "@babel/helper-string-parser": "npm:^7.27.1"
     "@babel/helper-validator-identifier": "npm:^7.27.1"
   checksum: 10c0/ac6f909d6191319e08c80efbfac7bd9a25f80cc83b43cd6d82e7233f7a6b9d6e7b90236f3af7400a3f83b576895bcab9188a22b584eb0f224e80e6d4e95f4517
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/types@npm:7.28.5"
+  dependencies:
+    "@babel/helper-string-parser": "npm:^7.27.1"
+    "@babel/helper-validator-identifier": "npm:^7.28.5"
+  checksum: 10c0/a5a483d2100befbf125793640dec26b90b95fd233a94c19573325898a5ce1e52cdfa96e495c7dcc31b5eca5b66ce3e6d4a0f5a4a62daec271455959f208ab08a
   languageName: node
   linkType: hard
 
@@ -485,9 +541,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/ai@npm:2.4.0":
-  version: 2.4.0
-  resolution: "@firebase/ai@npm:2.4.0"
+"@firebase/ai@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@firebase/ai@npm:2.6.0"
   dependencies:
     "@firebase/app-check-interop-types": "npm:0.3.3"
     "@firebase/component": "npm:0.7.0"
@@ -497,7 +553,7 @@ __metadata:
   peerDependencies:
     "@firebase/app": 0.x
     "@firebase/app-types": 0.x
-  checksum: 10c0/90768e7150212794fd4d72b8c23f7ca9f5c6cc428068641d7f5e541849654b5079a85b51f4b73f4c1c3f63a90ee317eaa940def1d912b6b91ef42adb541a031b
+  checksum: 10c0/708b8fc6db01327c779dcd3d94be52a8b85b99559a5f5ee3233be5ba2130018b2e5cfb203664413473836e25b3a66d2e16a6247d1784c48462e945096932e9df
   languageName: node
   linkType: hard
 
@@ -582,16 +638,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/app-compat@npm:0.5.4":
-  version: 0.5.4
-  resolution: "@firebase/app-compat@npm:0.5.4"
+"@firebase/app-compat@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@firebase/app-compat@npm:0.5.6"
   dependencies:
-    "@firebase/app": "npm:0.14.4"
+    "@firebase/app": "npm:0.14.6"
     "@firebase/component": "npm:0.7.0"
     "@firebase/logger": "npm:0.5.0"
     "@firebase/util": "npm:1.13.0"
     tslib: "npm:^2.1.0"
-  checksum: 10c0/93d93db02d9a67b68e4ed04968b0ac40c3fa271482f50f7e7075b8d21224db72922489481221494c239f8c84103ed4098b96fd3b24cdb9b64ba1e751015388af
+  checksum: 10c0/cb21a6b61de63a48ed75bf2abd6863d19c46b44841cd5cc65eddf6a33b1986748d215c05bb080a6805cf1b70fe7295740b3dc64fbc355de57d49ead190a7372b
   languageName: node
   linkType: hard
 
@@ -602,31 +658,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/app@npm:0.14.4":
-  version: 0.14.4
-  resolution: "@firebase/app@npm:0.14.4"
+"@firebase/app@npm:0.14.6":
+  version: 0.14.6
+  resolution: "@firebase/app@npm:0.14.6"
   dependencies:
     "@firebase/component": "npm:0.7.0"
     "@firebase/logger": "npm:0.5.0"
     "@firebase/util": "npm:1.13.0"
     idb: "npm:7.1.1"
     tslib: "npm:^2.1.0"
-  checksum: 10c0/edefa85530d943452f8848767b6657a29a16458eaef8546301a709d0a7d825c5af8d6099d89222aab30f8d6f52c20582074f26886291c699160d37748e8e55c1
+  checksum: 10c0/bc79488a20ec065929a7de8c39560c507b80e85bc892a784b1a3ba44e4f57c203b27755c6b2cb1699f13ac1f7fca7ecc7bad3de1673d4788c1f7063037ced9f9
   languageName: node
   linkType: hard
 
-"@firebase/auth-compat@npm:0.6.0":
-  version: 0.6.0
-  resolution: "@firebase/auth-compat@npm:0.6.0"
+"@firebase/auth-compat@npm:0.6.1":
+  version: 0.6.1
+  resolution: "@firebase/auth-compat@npm:0.6.1"
   dependencies:
-    "@firebase/auth": "npm:1.11.0"
+    "@firebase/auth": "npm:1.11.1"
     "@firebase/auth-types": "npm:0.13.0"
     "@firebase/component": "npm:0.7.0"
     "@firebase/util": "npm:1.13.0"
     tslib: "npm:^2.1.0"
   peerDependencies:
     "@firebase/app-compat": 0.x
-  checksum: 10c0/ec3f993938e652494f08562155ea6e31c172c9485134f0c4239c14fdec2fb068dbb58edc8dd46df15b45b687f81df38fa9e0fd5feeb09aeeb4efeacbcdc4312a
+  checksum: 10c0/663dab385a062c8a1a1519dd9455d02ae6652cd6f1b561653945d580af732fb780465d01d78d2aaf33c16d0972c7452672c474a4ffe6c9e12bee5d7969e96b00
   languageName: node
   linkType: hard
 
@@ -647,9 +703,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/auth@npm:1.11.0":
-  version: 1.11.0
-  resolution: "@firebase/auth@npm:1.11.0"
+"@firebase/auth@npm:1.11.1":
+  version: 1.11.1
+  resolution: "@firebase/auth@npm:1.11.1"
   dependencies:
     "@firebase/component": "npm:0.7.0"
     "@firebase/logger": "npm:0.5.0"
@@ -661,7 +717,7 @@ __metadata:
   peerDependenciesMeta:
     "@react-native-async-storage/async-storage":
       optional: true
-  checksum: 10c0/33c887591eccf3392a5b65baefd4ce2e6540dd07fa7d05f9044711f58b4713f9433f54b54b40a61b82d48f29bc4520fb8e603ddfaecd07ca2b9dbe7ae2335bdc
+  checksum: 10c0/0ccb395ac9e1838964070434a57c28de33a346f9f441e237ff91ca6bc20b60b6d9eb7c093c152d36822b189193f50f689fed3919358e79e3ac40b44d101381bf
   languageName: node
   linkType: hard
 
@@ -675,9 +731,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/data-connect@npm:0.3.11":
-  version: 0.3.11
-  resolution: "@firebase/data-connect@npm:0.3.11"
+"@firebase/data-connect@npm:0.3.12":
+  version: 0.3.12
+  resolution: "@firebase/data-connect@npm:0.3.12"
   dependencies:
     "@firebase/auth-interop-types": "npm:0.2.4"
     "@firebase/component": "npm:0.7.0"
@@ -686,7 +742,7 @@ __metadata:
     tslib: "npm:^2.1.0"
   peerDependencies:
     "@firebase/app": 0.x
-  checksum: 10c0/6aceb62164c34ba0f31f74f4564d81f8095baf966a72ccb1694fd947547b390c138c82638404811da197b909b2ce6521a7dde8ab9425712977e48b7192e83a32
+  checksum: 10c0/f1134585d5e571286ed285d4385b1e6930b3efd385cbd28eacb170a8fcf6ff9427b5583d8e9343d4a06783a2c99e05411cb2a402394336b6a7ac9c98c6618269
   languageName: node
   linkType: hard
 
@@ -1312,10 +1368,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rolldown/pluginutils@npm:1.0.0-beta.38":
-  version: 1.0.0-beta.38
-  resolution: "@rolldown/pluginutils@npm:1.0.0-beta.38"
-  checksum: 10c0/8353ec2528349f79e27d1a3193806725b85830da334e935cbb606d88c1177c58ea6519c578e4e93e5f677f5b22aecb8738894dbed14603e14b6bffe3facf1002
+"@rolldown/pluginutils@npm:1.0.0-beta.47":
+  version: 1.0.0-beta.47
+  resolution: "@rolldown/pluginutils@npm:1.0.0-beta.47"
+  checksum: 10c0/eb0cfa7334d66f090c47eaac612174936b05f26e789352428cb6e03575b590f355de30d26b42576ea4e613d8887b587119d19b2e4b3a8909ceb232ca1cf746c8
   languageName: node
   linkType: hard
 
@@ -1528,21 +1584,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "@types/react-dom@npm:19.2.2"
+"@types/react-dom@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "@types/react-dom@npm:19.2.3"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: 10c0/6154dfb8e7a638313d7fa15b2b16494f2235afda4c43be37d10f34e5c7a730f6b95117facb5e6eebc73b15cceea7f6da23be46cda5d2262fd00fd7e6069547e3
+  checksum: 10c0/b486ebe0f4e2fb35e2e108df1d8fc0927ca5d6002d5771e8a739de11239fe62d0e207c50886185253c99eb9dedfeeb956ea7429e5ba17f6693c7acb4c02f8cd1
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "@types/react@npm:19.2.2"
+"@types/react@npm:^19.2.7":
+  version: 19.2.7
+  resolution: "@types/react@npm:19.2.7"
   dependencies:
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/f830b1204aca4634ce3c6cb3477b5d3d066b80a4dd832a4ee0069acb504b6debd2416548a43a11c1407c12bc60e2dc6cf362934a18fe75fe06a69c0a98cba8ab
+    csstype: "npm:^3.2.2"
+  checksum: 10c0/a7b75f1f9fcb34badd6f84098be5e35a0aeca614bc91f93d2698664c0b2ba5ad128422bd470ada598238cebe4f9e604a752aead7dc6f5a92261d0c7f9b27cfd1
   languageName: node
   linkType: hard
 
@@ -1553,19 +1609,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:^5.0.4":
-  version: 5.0.4
-  resolution: "@vitejs/plugin-react@npm:5.0.4"
+"@vitejs/plugin-react@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "@vitejs/plugin-react@npm:5.1.1"
   dependencies:
-    "@babel/core": "npm:^7.28.4"
+    "@babel/core": "npm:^7.28.5"
     "@babel/plugin-transform-react-jsx-self": "npm:^7.27.1"
     "@babel/plugin-transform-react-jsx-source": "npm:^7.27.1"
-    "@rolldown/pluginutils": "npm:1.0.0-beta.38"
+    "@rolldown/pluginutils": "npm:1.0.0-beta.47"
     "@types/babel__core": "npm:^7.20.5"
-    react-refresh: "npm:^0.17.0"
+    react-refresh: "npm:^0.18.0"
   peerDependencies:
     vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
-  checksum: 10c0/bb9360a4b4c0abf064d22211756b999faf23889ac150de490590ca7bd029b0ef7f4cd8ba3a32b86682a62d46fb7bebd75b3fa9835c57c78123f4a646de2e0136
+  checksum: 10c0/e590efaea1eabfbb1beb6e8c9fac0742fd299808e3368e63b2825ce24740adb8a28fcb2668b14b7ca1bdb42890cfefe94d02dd358dcbbf8a27ddf377b9a82abf
   languageName: node
   linkType: hard
 
@@ -1754,17 +1810,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001669":
-  version: 1.0.30001688
-  resolution: "caniuse-lite@npm:1.0.30001688"
-  checksum: 10c0/2ef3145ac69ea5faf403b613912a3a72006db2e004e58abcf40dc89904aa05568032b5a6dcfb267556944fd380a9b018ad645f93d84e543bed3471e4950a89f4
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001702, caniuse-lite@npm:^1.0.30001716":
-  version: 1.0.30001718
-  resolution: "caniuse-lite@npm:1.0.30001718"
-  checksum: 10c0/67f9ad09bc16443e28d14f265d6e468480cd8dc1900d0d8b982222de80c699c4f2306599c3da8a3fa7139f110d4b30d49dbac78f215470f479abb6ffe141d5d3
+"caniuse-lite@npm:^1.0.30001669, caniuse-lite@npm:^1.0.30001702, caniuse-lite@npm:^1.0.30001716":
+  version: 1.0.30001759
+  resolution: "caniuse-lite@npm:1.0.30001759"
+  checksum: 10c0/b0f415960ba34995cda18e0d25c4e602f6917b9179290a76bdd0311423505b78cc93e558a90c98a22a1cc6b1781ab720ef6beea24ec7e29a1c1164ca72eac3a2
   languageName: node
   linkType: hard
 
@@ -1816,22 +1865,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "coindeno-web@workspace:."
   dependencies:
-    "@types/react": "npm:^19.2.2"
-    "@types/react-dom": "npm:^19.2.2"
-    "@vitejs/plugin-react": "npm:^5.0.4"
+    "@types/react": "npm:^19.2.7"
+    "@types/react-dom": "npm:^19.2.3"
+    "@vitejs/plugin-react": "npm:^5.1.1"
     autoprefixer: "npm:^10.4.21"
     crypto-js: "npm:^4.2.0"
     dotenv: "npm:^17.2.3"
-    firebase: "npm:^12.4.0"
+    firebase: "npm:^12.6.0"
     moment: "npm:^2.30.1"
     moment-timezone: "npm:^0.6.0"
     postcss: "npm:^8.5.6"
-    react: "npm:^19.2.0"
-    react-dom: "npm:^19.2.0"
+    react: "npm:^19.2.1"
+    react-dom: "npm:^19.2.1"
     react-icons: "npm:^5.5.0"
     react-redux: "npm:^9.2.0"
-    react-router: "npm:^7.9.4"
-    react-router-dom: "npm:^7.9.4"
+    react-router: "npm:^7.10.1"
+    react-router-dom: "npm:^7.10.1"
     redux: "npm:^5.0.1"
     tailwindcss: "npm:^3.4.16"
     vite: "npm:^7.1.11"
@@ -1903,10 +1952,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2":
-  version: 3.1.0
-  resolution: "csstype@npm:3.1.0"
-  checksum: 10c0/4edcf1eb8b8e83e8b1dc557d9f61e720012e6d2453f4c05fa4221dacf604c4d7552383f0cead9adea4b3f23e3da3aa25cc4fb05823b51fb1cbad43e1d8bb45ff
+"csstype@npm:^3.2.2":
+  version: 3.2.3
+  resolution: "csstype@npm:3.2.3"
+  checksum: 10c0/cd29c51e70fa822f1cecd8641a1445bed7063697469d35633b516e60fe8c1bde04b08f6c5b6022136bb669b64c63d4173af54864510fbb4ee23281801841a3ce
   languageName: node
   linkType: hard
 
@@ -2160,21 +2209,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:^12.4.0":
-  version: 12.4.0
-  resolution: "firebase@npm:12.4.0"
+"firebase@npm:^12.6.0":
+  version: 12.6.0
+  resolution: "firebase@npm:12.6.0"
   dependencies:
-    "@firebase/ai": "npm:2.4.0"
+    "@firebase/ai": "npm:2.6.0"
     "@firebase/analytics": "npm:0.10.19"
     "@firebase/analytics-compat": "npm:0.2.25"
-    "@firebase/app": "npm:0.14.4"
+    "@firebase/app": "npm:0.14.6"
     "@firebase/app-check": "npm:0.11.0"
     "@firebase/app-check-compat": "npm:0.4.0"
-    "@firebase/app-compat": "npm:0.5.4"
+    "@firebase/app-compat": "npm:0.5.6"
     "@firebase/app-types": "npm:0.9.3"
-    "@firebase/auth": "npm:1.11.0"
-    "@firebase/auth-compat": "npm:0.6.0"
-    "@firebase/data-connect": "npm:0.3.11"
+    "@firebase/auth": "npm:1.11.1"
+    "@firebase/auth-compat": "npm:0.6.1"
+    "@firebase/data-connect": "npm:0.3.12"
     "@firebase/database": "npm:1.1.0"
     "@firebase/database-compat": "npm:2.1.0"
     "@firebase/firestore": "npm:4.9.2"
@@ -2192,7 +2241,7 @@ __metadata:
     "@firebase/storage": "npm:0.14.0"
     "@firebase/storage-compat": "npm:0.4.0"
     "@firebase/util": "npm:1.13.0"
-  checksum: 10c0/fd939ef8745d82a74356d598d0ca85f65360ee58d186afa96b8cf429f617d1c4f4d99745eadb295bbb0b8a0cee7edac8d22039c8af0ce869218677ce005400ac
+  checksum: 10c0/be710e774e4c709c2ddbe5ee669ef2783ffc036acf9cee3746b6f457588defee647e2891c2ed2954b8ec25612778d94d13364fef768c27cc3cbcc2a37a07188a
   languageName: node
   linkType: hard
 
@@ -3102,14 +3151,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "react-dom@npm:19.2.0"
+"react-dom@npm:^19.2.1":
+  version: 19.2.1
+  resolution: "react-dom@npm:19.2.1"
   dependencies:
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.0
-  checksum: 10c0/fa2cae05248d01288e91523b590ce4e7635b1e13f1344e225f850d722a8da037bf0782f63b1c1d46353334e0c696909b82e582f8cad607948fde6f7646cc18d9
+    react: ^19.2.1
+  checksum: 10c0/e56b6b3d72314df580ca800b70a69a21c6372703c8f45d9b5451ca6519faefb2496d76ffa9c5adb94136d2bbf2fd303d0dfc208a2cd77ede3132877471af9470
   languageName: node
   linkType: hard
 
@@ -3141,28 +3190,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:^0.17.0":
-  version: 0.17.0
-  resolution: "react-refresh@npm:0.17.0"
-  checksum: 10c0/002cba940384c9930008c0bce26cac97a9d5682bc623112c2268ba0c155127d9c178a9a5cc2212d560088d60dfd503edd808669a25f9b377f316a32361d0b23c
+"react-refresh@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "react-refresh@npm:0.18.0"
+  checksum: 10c0/34a262f7fd803433a534f50deb27a148112a81adcae440c7d1cbae7ef14d21ea8f2b3d783e858cb7698968183b77755a38b4d4b5b1d79b4f4689c2f6d358fff2
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^7.9.4":
-  version: 7.9.4
-  resolution: "react-router-dom@npm:7.9.4"
+"react-router-dom@npm:^7.10.1":
+  version: 7.10.1
+  resolution: "react-router-dom@npm:7.10.1"
   dependencies:
-    react-router: "npm:7.9.4"
+    react-router: "npm:7.10.1"
   peerDependencies:
     react: ">=18"
     react-dom: ">=18"
-  checksum: 10c0/03979ef887411230188d8eb7e001379c164f28235d5e3589f9192f73edae4c6e59a155aec0bcdcb84b3fa4e72caff0c38f4709ffb2e4cdca4cb8a8ab1c60dd35
+  checksum: 10c0/e0d0f8176974567321ae6eda319064e4207339b930422cc5efb4e39214e065a698f3c706a9fdb41a4e6e0a1f79c91fe1122a5a960eb30430aaed34a658e336ed
   languageName: node
   linkType: hard
 
-"react-router@npm:7.9.4, react-router@npm:^7.9.4":
-  version: 7.9.4
-  resolution: "react-router@npm:7.9.4"
+"react-router@npm:7.10.1, react-router@npm:^7.10.1":
+  version: 7.10.1
+  resolution: "react-router@npm:7.10.1"
   dependencies:
     cookie: "npm:^1.0.1"
     set-cookie-parser: "npm:^2.6.0"
@@ -3172,14 +3221,14 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/c7556b752fa88d2bff600ce3533c962dcbe9ca9bf71f9c4b8e8a21f904856990bcb284844d53eb1dd486adaa7567c7ecf0deb3e518262269ea1ea89bea246be4
+  checksum: 10c0/e114a319603ccf0394f616f954ee3f53bec04636a2f13383b1e941b8fa6c1c64b71b60527e3db8e7f971dcfaaeb9a82bd7c2ddd884a718694e589403e6975d52
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "react@npm:19.2.0"
-  checksum: 10c0/1b6d64eacb9324725bfe1e7860cb7a6b8a34bc89a482920765ebff5c10578eb487e6b46b2f0df263bd27a25edbdae2c45e5ea5d81ae61404301c1a7192c38330
+"react@npm:^19.2.1":
+  version: 19.2.1
+  resolution: "react@npm:19.2.1"
+  checksum: 10c0/2b5eaf407abb3db84090434c20d6c5a8e447ab7abcd8fe9eaf1ddc299babcf31284ee9db7ea5671d21c85ac5298bd632fa1a7da1ed78d5b368a537f5e1cd5d62
   languageName: node
   linkType: hard
 
